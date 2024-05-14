@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Home Page</h1>
+
+<div>
+    <div>
+        {% for news in newss %}
+
+        <div>
+            <h5>{{news.id}} -- <a href="/news/{{news.id}}">{{news.name}}</a></h5>
+        </div>
+
+        {% endfor %}
+
+        {% for i in response %}
+        {{i.url}}
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}

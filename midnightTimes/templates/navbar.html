@@ -1,0 +1,36 @@
+<style>
+    .nav{
+        background-color:peru;
+        margin: -8px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: black;
+    }
+
+    a:hover{
+        color: brown;
+    }
+
+    a:active{
+        color: beige;
+    }
+
+</style>
+
+<div class="nav">
+    <a href="/">
+        <h1>HOME</h1>
+    </a>
+
+    <form method="Get" action="{% url 'home' %}" >
+        <input type="text" name="q" placeholder="Search Latest News...">
+    </form>
+</div>
+
